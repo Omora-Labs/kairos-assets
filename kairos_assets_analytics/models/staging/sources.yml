@@ -1,0 +1,104 @@
+version: 2
+
+sources:
+  - name: main
+    description: "Raw tables from kairos-assets database"
+    tables:
+      - name: currencies
+        description: "Available currencies"
+        columns:
+          - name: id
+            description: "Currency unique identifier"
+            data_tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Currency name"
+            data_tests:
+              - not_null
+
+      - name: assets
+        description: "Asset definitions"
+        columns:
+          - name: id
+            description: "Asset unique identifier"
+            data_tests:
+              - unique
+              - not_null
+          - name: currency_id
+            description: "Currency ID for this asset"
+            data_tests:
+              - not_null
+              - relationships:
+                  to: source('main', 'currencies')
+                  field: id
+          - name: name
+            description: "Asset name"
+            data_tests:
+              - not_null
+
+      - name: asset_values
+        description: "Asset values over time"
+        columns:
+          - name: id
+            description: "Value record unique identifier"
+            data_tests:
+              - unique
+              - not_null
+          - name: asset_id
+            description: "Asset ID"
+            data_tests:
+              - not_null
+              - relationships:
+                  to: source('main', 'assets')
+                  field: id
+          - name: value
+            description: "Asset value"
+            data_tests:
+              - not_null
+          - name: date
+            description: "Value date"
+            data_tests:
+              - not_null
+
+      - name: currency_pairs
+        description: "Currency pair definitions"
+        columns:
+          - name: id
+            description: "Currency pair unique identifier"
+            data_tests:
+              - unique
+              - not_null
+          - name: base_currency_id
+            description: "Base currency ID"
+            data_tests:
+              - not_null
+              - relationships:
+                  to: source('main', 'currencies')
+                  field: id
+          - name: quote_currency_id
+            description: "Quote currency ID"
+            data_tests:
+              - not_null
+              - relationships:
+                  to: source('main', 'currencies')
+                  field: id
+
+      - name: exchange_rates
+        description: "Exchange rates over time"
+        columns:
+          - name: currency_pair_id
+            description: "Currency pair ID"
+            data_tests:
+              - not_null
+              - relationships:
+                  to: source('main', 'currency_pairs')
+                  field: id
+          - name: value
+            description: "Exchange rate value"
+            data_tests:
+              - not_null
+          - name: date
+            description: "Rate date"
+            data_tests:
+              - not_null

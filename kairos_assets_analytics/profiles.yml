@@ -1,0 +1,6 @@
+kairos_assets_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../assets.duckdb'
