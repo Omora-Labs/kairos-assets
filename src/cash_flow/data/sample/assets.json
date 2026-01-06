@@ -1,0 +1,177 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "currency_id": 1,
+    "type": "payment_processor",
+    "supplier": "Stripe",
+    "starting_balance": 180000
+  },
+  {
+    "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+    "currency_id": 1,
+    "type": "payment_processor",
+    "supplier": "PayPal",
+    "starting_balance": 95000
+  },
+  {
+    "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+    "currency_id": 1,
+    "type": "receivables",
+    "supplier": "Internal",
+    "starting_balance": 280000
+  },
+  {
+    "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+    "currency_id": 1,
+    "type": "bank_account",
+    "supplier": "Wise",
+    "starting_balance": 150000
+  },
+  {
+    "id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+    "currency_id": 1,
+    "type": "bank_account",
+    "supplier": "Revolut",
+    "starting_balance": 120000
+  },
+  {
+    "id": "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+    "currency_id": 1,
+    "type": "investment",
+    "supplier": "Internal",
+    "starting_balance": 500000
+  },
+  {
+    "id": "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d",
+    "currency_id": 2,
+    "type": "payment_processor",
+    "supplier": "Stripe",
+    "starting_balance": 450000
+  },
+  {
+    "id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+    "currency_id": 2,
+    "type": "payment_processor",
+    "supplier": "PayPal",
+    "starting_balance": 220000
+  },
+  {
+    "id": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f",
+    "currency_id": 2,
+    "type": "receivables",
+    "supplier": "Internal",
+    "starting_balance": 520000
+  },
+  {
+    "id": "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a",
+    "currency_id": 2,
+    "type": "merchant_cash_advance",
+    "supplier": "Internal",
+    "starting_balance": 380000
+  },
+  {
+    "id": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b",
+    "currency_id": 2,
+    "type": "bank_account",
+    "supplier": "Mercury",
+    "starting_balance": 650000
+  },
+  {
+    "id": "f2a3b4c5-d6e7-4f8a-9b0c-1d2e3f4a5b6c",
+    "currency_id": 2,
+    "type": "bank_account",
+    "supplier": "Brex",
+    "starting_balance": 400000
+  },
+  {
+    "id": "a3b4c5d6-e7f8-4a9b-0c1d-2e3f4a5b6c7d",
+    "currency_id": 2,
+    "type": "marketable_securities",
+    "supplier": "Internal",
+    "starting_balance": 1200000
+  },
+  {
+    "id": "b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e",
+    "currency_id": 2,
+    "type": "investment",
+    "supplier": "Internal",
+    "starting_balance": 850000
+  },
+  {
+    "id": "c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f",
+    "currency_id": 3,
+    "type": "payment_processor",
+    "supplier": "Stripe",
+    "starting_balance": 140000
+  },
+  {
+    "id": "d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9f0a",
+    "currency_id": 3,
+    "type": "payment_processor",
+    "supplier": "PayPal",
+    "starting_balance": 75000
+  },
+  {
+    "id": "e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9f0a1b",
+    "currency_id": 3,
+    "type": "receivables",
+    "supplier": "Internal",
+    "starting_balance": 190000
+  },
+  {
+    "id": "f8a9b0c1-d2e3-4f4a-5b6c-7d8e9f0a1b2c",
+    "currency_id": 3,
+    "type": "bank_account",
+    "supplier": "Wise",
+    "starting_balance": 110000
+  },
+  {
+    "id": "a9b0c1d2-e3f4-4a5b-6c7d-8e9f0a1b2c3d",
+    "currency_id": 3,
+    "type": "bank_account",
+    "supplier": "HSBC",
+    "starting_balance": 200000
+  },
+  {
+    "id": "b0c1d2e3-f4a5-4b6c-7d8e-9f0a1b2c3d4e",
+    "currency_id": 3,
+    "type": "bank_account",
+    "supplier": "Revolut",
+    "starting_balance": 85000
+  },
+  {
+    "id": "c1d2e3f4-a5b6-4c7d-8e9f-0a1b2c3d4e5f",
+    "currency_id": 4,
+    "type": "payment_processor",
+    "supplier": "Stripe",
+    "starting_balance": 95000
+  },
+  {
+    "id": "d2e3f4a5-b6c7-4d8e-9f0a-1b2c3d4e5f6a",
+    "currency_id": 4,
+    "type": "payment_processor",
+    "supplier": "PayPal",
+    "starting_balance": 55000
+  },
+  {
+    "id": "e3f4a5b6-c7d8-4e9f-0a1b-2c3d4e5f6a7b",
+    "currency_id": 4,
+    "type": "receivables",
+    "supplier": "Internal",
+    "starting_balance": 130000
+  },
+  {
+    "id": "f4a5b6c7-d8e9-4f0a-1b2c-3d4e5f6a7b8c",
+    "currency_id": 4,
+    "type": "bank_account",
+    "supplier": "UBS",
+    "starting_balance": 280000
+  },
+  {
+    "id": "a5b6c7d8-e9f0-4a1b-2c3d-4e5f6a7b8c9d",
+    "currency_id": 4,
+    "type": "investment",
+    "supplier": "Internal",
+    "starting_balance": 450000
+  }
+]

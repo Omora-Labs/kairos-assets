@@ -1,0 +1,26 @@
+[
+  {
+    "base_currency_id": 1,
+    "quote_currency_id": 2
+  },
+  {
+    "base_currency_id": 1,
+    "quote_currency_id": 3
+  },
+  {
+    "base_currency_id": 1,
+    "quote_currency_id": 4
+  },
+  {
+    "base_currency_id": 3,
+    "quote_currency_id": 2
+  },
+  {
+    "base_currency_id": 3,
+    "quote_currency_id": 4
+  },
+  {
+    "base_currency_id": 2,
+    "quote_currency_id": 4
+  }
+]

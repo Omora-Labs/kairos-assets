@@ -1,0 +1,26 @@
+[
+  {
+    "type": "payment_processor",
+    "volatility": 0.08
+  },
+  {
+    "type": "receivables",
+    "volatility": 0.06
+  },
+  {
+    "type": "merchant_cash_advance",
+    "volatility": 0.09
+  },
+  {
+    "type": "bank_account",
+    "volatility": 0.04
+  },
+  {
+    "type": "marketable_securities",
+    "volatility": 0.02
+  },
+  {
+    "type": "investment",
+    "volatility": 0.02
+  }
+]
