@@ -19,11 +19,11 @@ Tracks weekly asset values across multiple currencies with automatic exchange ra
 
 ### Raw Tables
 
-- `currencies` - Currency definitions (USD, EUR, JPY, etc.)
+- `currencies` - Currency definitions (USD, EUR, GBP, CHF)
 - `account_suppliers` - Account provider names
 - `assets` - Asset records with currency and supplier references
-- `asset_values` - Weekly asset valuations with timestamps
-- `currency_pairs` - Base currency conversion pairs
+- `asset_values` - Weekly asset values with timestamps
+- `currency_pairs` - Currency pairs linked to table currencies
 - `exchange_rates` - Weekly exchange rates per currency pair
 
 ### dbt Models
@@ -36,8 +36,8 @@ Tracks weekly asset values across multiple currencies with automatic exchange ra
 
 **Final:**
 - `asset_values_data` - Weekly asset values with full details
-- `grouped_cash_balances` - Aggregated balances per currency
 - `converted_cash_balances` - All currency amounts converted to all reporting currencies
+- `grouped_cash_balances` - Aggregated converted balances per currency
 
 ## Setup
 
@@ -72,7 +72,7 @@ This will:
 
 ```bash
 cd weekly_cash_balances_dbt
-dbt run
+uv run dbt run
 ```
 
 ## Project Structure
