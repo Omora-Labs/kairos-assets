@@ -11,7 +11,8 @@ class DuckDB:
     def __init__(self):
         self._setup_motherduck_token()
         self.db_name = "weekly_cash_balances"
-        self.conn = duckdb.connect(f"md:{self.db_name}")
+        self.conn = duckdb.connect("md:")
+        self.create_and_link_db()
 
     def __enter__(self):
         self.conn.begin()
@@ -30,6 +31,10 @@ class DuckDB:
         token = os.getenv("MOTHERDUCK_TOKEN")
         if token:
             os.environ["motherduck_token"] = token
+
+    def create_and_link_db(self) -> None:
+        self.conn.execute(f"CREATE DATABASE IF NOT EXISTS {self.db_name}")
+        self.conn.execute(f"USE {self.db_name}")
 
     def setup_schema(self) -> None:
         print("Dropping existing tables...")
